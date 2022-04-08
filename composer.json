@@ -1,0 +1,30 @@
+{
+    "description": "Provides a toolkit to work with apache kafka",
+    "name": "d3mo17/kafka-tools",
+    "version": "0.9.2",
+    "type": "library",
+    "license": "mit",
+    "keywords": ["kaftan", "kafka", "tools"],
+    "authors": [
+      {
+        "name": "Daniel Moritz"
+      }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-rdkafka": ">=6.0",
+        "ext-curl": ">=7.0",
+        "jobcloud/php-kafka-schema-registry-client": "^1.0",
+        "kriswallsmith/buzz": "^1.0",
+        "nyholm/psr7": "^1.2",
+        "flix-tech/avro-php": "^4.0"
+    },
+    "suggest": {
+        "ext-gmp": "Large integer support for 32-bit platforms.",
+        "ext-zlib": "Zlib support for Deflate codec.",
+        "ext-snappy": "Snappy support for Snappy codec (mainly Google)."
+    },
+    "autoload": {
+      "psr-4": { "DMo\\Kaftan\\": "src" }
+    }
+}
